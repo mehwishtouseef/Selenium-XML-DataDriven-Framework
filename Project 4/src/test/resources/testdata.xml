@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <user type="valid">
+        <username>standard_user</username>
+        <password>secret_sauce</password>
+        <expected>inventory.html</expected>
+    </user>
+    <user type="locked">
+        <username>locked_out_user</username>
+        <password>secret_sauce</password>
+        <expected>Sorry, this user has been locked out</expected>
+    </user>
+    <user type="invalid">
+        <username>invalid_user</username>
+        <password>secret_sauce</password>
+        <expected>Username and password do not match</expected>
+    </user>
+</testdata>
